@@ -1,4 +1,4 @@
-function JT_GUI_MoreTesting(logTable)
+function JT_GUI(logTable)
 close;  %use this if you want to close the figure and redraw it
 gui = createInterface();
 
