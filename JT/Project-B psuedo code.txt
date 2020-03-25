@@ -1,0 +1,55 @@
+main(){
+
+	DSO dso1 = DSO(no_of_aggregators);
+	
+	for (i = 1; i<no_of_time_steps; i++){
+		dso1.optimize(target(i));
+	}
+}
+
+======================================================================================================
+//DSO class 
+
+DSO(no_of_aggregators){
+	
+	aggregators = {}
+	for (i = i<no_of_aggregators; i++){
+		aggragators{i} = aggragator(i) 
+	}
+}
+
+optimize(target){
+	/*Define your DSO optimization policy*/
+}
+
+==========================================================================================================
+//aggregator class 
+
+aggragator(aggragator_no){
+
+buildings = get_buiding_numbers(aggragator_no)
+	buildings = {}
+	for (i = i<no_of_buildings; i++){
+		buildings{i} = building(i) 
+	}
+}
+
+optimize(target){
+	/*Define your aggregator optimization policy*/
+}
+
+==========================================================================================================
+//building class 
+
+building(building_no){
+
+dwelling_units = get_dwelling_unit_numbers(building_no)
+	buildings = {}
+	for (i = i<no_of_dwelling_units; i++){
+		dwelling_units{i} = dwelling_unit(i) 
+	}
+}
+
+optimize(target){
+	/*Define your building optimization policy*/
+}
